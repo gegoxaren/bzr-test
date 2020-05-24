@@ -4,7 +4,7 @@ I'm not friends with Git, so this is is a test to see if I can do it with
 Bazaar instead.
 
 First you need to install bzr-git, this is done in Ubuntu via
-`sudo apt install bzr-git'`
+`sudo apt install bzr-git`
 
 We then need to add GitHub to the `~/.bazaar/authentication.conf` file:
 
