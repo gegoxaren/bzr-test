@@ -14,3 +14,13 @@ bzr push --lossy https://github.com/gegoxaren/bzr-test.git/,branch=master
 
 The branch name is put in the end of the URL, in this case
 `,branch=master`.
+
+To push to a new remote-branch, we use a different branch name.
+I will use `my-awesome-fix` for in this example.
+
+```
+bzr push --lossy https://github.com/gegoxaren/bzr-test.git/,branch=my-awesome-fix
+```
+
+This will create a new branch on github, and it is usable on github as any other
+git branch when merging.
