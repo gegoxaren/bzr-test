@@ -1,4 +1,4 @@
-# This is just a test of pushing from a bazaar repo to github.
+# This is just a test of pushing from a bazaar repo to GitHub and GitLab.
 
 I'm not friends with Git, so this is is a test to see if I can do it with
 Bazaar instead.
@@ -15,6 +15,15 @@ host=github.com
 user=gegoxaren
 ```
 
+For GitLab we do something similar:
+
+```
+[gitlab.com]
+scheme=https
+host=gitlab.com
+user=gustav.hartvigsson
+```
+
 Note: I did not put my password in the file, and that is something you should not
 do, it is actively discouraged by Bazaar, and it will warn you.
 
@@ -23,6 +32,13 @@ Then you have to push it, in this case this is what I did:
 ```
 bzr push --lossy https://github.com/gegoxaren/bzr-test.git/,branch=master
 ```
+
+Or on GitLab:
+
+```
+bzr push --lossy https://github.com/gustav.hartvigsson/bzr-test.git/,branch=master
+```
+
 
 The branch name is put in the end of the URL, in this case
 `,branch=master`.
