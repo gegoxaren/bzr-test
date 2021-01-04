@@ -27,11 +27,23 @@ user=gustav.hartvigsson
 Note: I did not put my password in the file, and that is something you should not
 do, it is actively discouraged by Bazaar, and it will warn you.
 
+Note: GitHub is moving away from allowing password authentication over https,
+so we will need to add an ssh key to make it work.
+
+
+
 Then you have to push it, in this case this is what I did:
 
 ```
 bzr push --lossy https://github.com/gegoxaren/bzr-test.git/,branch=master
+
 ```
+
+Using SSH:
+```
+bzr push --lossy 
+```
+
 
 Or on GitLab:
 
