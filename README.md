@@ -50,9 +50,8 @@ at all.)
 
 
 Or on GitLab:
-
 ```
-bzr push --lossy https://github.com/gustav.hartvigsson/bzr-test.git/,branch=master
+bzr push https://gitlab.com/gustav.hartvigsson/bzr-test.git,branch=master
 ```
 
 
