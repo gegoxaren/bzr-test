@@ -40,6 +40,7 @@ bzr push --lossy https://github.com/gegoxaren/bzr-test.git/,branch=master
 ```
 
 Using SSH:
+
 ```
 bzr push ush git@github.com:gegoxaren/bzr-test.git,branch=master
 ```
@@ -50,6 +51,7 @@ at all.)
 
 
 Or on GitLab:
+
 ```
 bzr push https://gitlab.com/gustav.hartvigsson/bzr-test.git,branch=master
 ```
@@ -91,4 +93,15 @@ Of course this works with other branches as well:
 ```
 bzr branch https://github.com/gegoxaren/bzr-test.git/,branch=my-awesome-fix bzr-test-my-awesome-fix
 ```
+
+## Note on when to use `--lossy` or not.
+
+This might be a bit confusing, but if you pull a repository using bzr-git, it
+will not create a bazaar repository, but a git repository. This is unexpcted,
+to say the least.
+
+If it is a native git repository than you should not use '--lossy' but if it is
+a bazaar repository then you should use '--lossy'.
+
+
 
