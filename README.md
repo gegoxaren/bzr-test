@@ -1,7 +1,7 @@
-# This is just a test of pushing from a bazaar repo to GitHub and GitLab.
+# This is just a test of pushing from a Breezy repo to GitHub and GitLab.
 
 I'm not friends with Git, so this is is a test to see if I can do it with
-Bazaar instead.
+Breezy instead.
 
 First you need to install bzr-git, this is done in Ubuntu via
 `sudo apt install bzr-git`
@@ -25,7 +25,7 @@ user=gustav.hartvigsson
 ```
 
 Note: I did not put my password in the file, and that is something you should not
-do, it is actively discouraged by Bazaar, and it will warn you.
+do, it is actively discouraged by Breezy, and it will warn you.
 
 Note: GitHub is moving away from allowing password authentication over https,
 so we will need to add an ssh key to make it work.
@@ -97,11 +97,11 @@ bzr branch https://github.com/gegoxaren/bzr-test.git/,branch=my-awesome-fix bzr-
 ## Note on when to use `--lossy` or not.
 
 This might be a bit confusing, but if you pull a repository using bzr-git, it
-will not create a bazaar repository, but a git repository. This is unexpcted,
+will not create a Breezy repository, but a git repository. This is unexpected,
 to say the least.
 
 If it is a native git repository than you should not use '--lossy' but if it is
-a bazaar repository then you should use '--lossy'.
+a Breezy repository then you should use '--lossy'.
 
 
 
